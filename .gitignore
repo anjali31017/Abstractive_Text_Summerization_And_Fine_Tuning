@@ -1,0 +1,8 @@
+.ipynb_checkpoints/
+__pycache__/
+*.pyc
+env/
+notebook/.ipynb_checkpoints/
+notebook/fine_tune_bart.ipynb
+app.py
+summerization_model.py

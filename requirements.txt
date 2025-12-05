@@ -1,0 +1,13 @@
+transformers
+datasets 
+torch 
+sentencepiece
+fastapi
+uvicorn
+jupyter
+ipykernel
+rouge_score
+peft 
+bitsandbytes 
+datasets 
+rouge_score
