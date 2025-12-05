@@ -1,4 +1,4 @@
-# News Summarizer
+# Text Summarizer
 
 This project performs abstractive text summarization using a fine-tuned DistilBART model with LoRA.  
 It includes a FastAPI backend for generating summaries and a simple HTML interface for user input.
