@@ -3,7 +3,7 @@ from pydantic import BaseModel
 from summerization_model import summarize
 from fastapi.middleware.cors import CORSMiddleware
 
-app = FastAPI(title="News Summarizer API")
+app = FastAPI(title="Text Summarizer API")
 
 origins = [ "*" ]
 
@@ -15,15 +15,15 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-class NewsArticle(BaseModel):
+class TextArticle(BaseModel):
     text: str
 
 @app.get("/")
 def root():
-    return {"message": "Welcome to News Summarizer API"}
+    return {"message": "Welcome to Text Summarizer API"}
 
 @app.post("/summarize")
-def summarize_article(article: NewsArticle):
+def summarize_article(article: TextArticle):
     try:
         summary = summarize(article.text)
         return {
