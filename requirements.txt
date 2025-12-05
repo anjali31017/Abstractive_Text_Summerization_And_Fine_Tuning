@@ -2,7 +2,7 @@ transformers
 datasets 
 torch 
 sentencepiece
-fastapi
+fastapi[standard]
 uvicorn
 jupyter
 ipykernel
